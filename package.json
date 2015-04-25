@@ -1,20 +1,21 @@
 {
-  "name": "@optbot/template",
-  "version": "0.0.2",
-  "description": "template for starting a new package",
-  "main": "lib/start",
+  "name": "@optbot/eqpuller",
+  "version": "0.0.0",
+  "description": "maintain a list of active equities",
+  "main": "lib/norequire",
   "scripts": {
     "start": "node lib/start.js",
-    "show": "node lib/show.js",
+    "stop": "node lib/stop.js",
+    "setup": "node lib/setup.js",
     "test": "./node_modules/.bin/mocha"
   },
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/optbot/template.git"
+    "url": "git://github.com/optbot/eqpuller.git"
   },
   "keywords": [
-    "template",
+    "eqpuller",
     "optbot"
   ],
   "author": "Marshall Farrier",
@@ -26,8 +27,12 @@
     "lib/"
   ],
   "config": {
-    "host": "localhost",
-    "port": "666"
+    "db": {
+      "optionsMkt": "mongodb://localhost:27017/optionsMkt"
+    }
+  },
+  "dependencies": {
+    "@optbot/pytools": "git://github.com/optbot/pytools.git"
   },
   "devDependencies": {
     "chai": "~2.2.0",
