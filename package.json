@@ -27,12 +27,15 @@
     "lib/"
   ],
   "config": {
+    "user": "eqpuller",
     "db": {
       "optionsMkt": "mongodb://localhost:27017/optionsMkt"
     }
   },
   "dependencies": {
-    "@optbot/pytools": "git://github.com/optbot/pytools.git"
+    "@optbot/pytools": "git://github.com/optbot/pytools.git#marshall",
+    "nconf": "~0.7.1",
+    "shelljs": "~0.4.0"
   },
   "devDependencies": {
     "chai": "~2.2.0",
