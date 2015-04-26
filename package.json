@@ -33,7 +33,7 @@
     }
   },
   "dependencies": {
-    "@optbot/pytools": "git://github.com/optbot/pytools.git#marshall",
+    "@optbot/pytools": "git://github.com/optbot/pytools.git",
     "nconf": "~0.7.1",
     "shelljs": "~0.4.0"
   },
