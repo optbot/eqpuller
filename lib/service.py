@@ -1,3 +1,5 @@
+import pymongo
+
 def equities():
     _ret = [
             'ddd',
