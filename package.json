@@ -28,9 +28,7 @@
   ],
   "config": {
     "user": "eqpuller",
-    "db": {
-      "optionsMkt": "mongodb://localhost:27017/optionsMkt"
-    }
+    "db": "mongodb://localhost:27017/"
   },
   "dependencies": {
     "@optbot/pytools": "git://github.com/optbot/pytools.git",
