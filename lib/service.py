@@ -12,16 +12,57 @@ import pymongo
 
 logger = logging.getLogger('eqpuller')
 
-def equities():
-    _ret = [
-            'ddd',
-            'ge',
-            'nflx',
-            'scty',
-            'spwr',
-            'tsla',
+def rows():
+    _symbols = [
+            'DDD',
+            'FSLR',
+            'GE',
+            'GILD',
+            'JUNO',
+            'NFLX',
+            'SCTY',
+            'SPWR',
+            'SSYS',
+            'TSLA',
+            'WATT',
             ]
+    _companies = [
+            '3D Systems Corporation',
+            'First Solar, Inc.',
+            'General Electric Company',
+            'Gilead Sciences Inc.',
+            'Juno Therapeutics Inc.',
+            'Netflix, Inc.',
+            'SolarCity Corporation',
+            'SunPower Corporation',
+            'Stratasys Ltd.',
+            'Tesla Motors, Inc.',
+            'Energous Corporation',
+            ]
+    _exchanges = [
+            'NYSE',
+            'NASDAQ',
+            'NYSE',
+            'NASDAQ',
+            'NASDAQ',
+            'NASDAQ',
+            'NASDAQ',
+            'NASDAQ',
+            'NASDAQ',
+            'NASDAQ',
+            'NASDAQ',
+            ]
+    _ret = []
+    for i in range(len(_symbols)):
+        _ret.append({"symbol": _symbols[i], 
+            "company_name": _companies[i], "exchange": _exchanges[i],
+            "active": True}) 
     return _ret;
+
+def eqpuller():
+    _rows = rows()
+    for _row in _rows:
+        print(_row)
 
 if __name__ == '__main__':
     _parser = argparse.ArgumentParser()
@@ -33,6 +74,4 @@ if __name__ == '__main__':
     _handler.setFormatter(_formatter)
     logger.addHandler(_handler)
     logger.setLevel(logging.INFO)
-    logger.info(equities())
-    logger.warn('hander works!')
-    logger.info('formatter works!')
+    eqpuller()
