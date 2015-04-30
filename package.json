@@ -2,7 +2,7 @@
   "name": "@optbot/eqpuller",
   "version": "0.0.0",
   "description": "maintain a list of active equities",
-  "main": "lib/norequire",
+  "main": "lib/norequire.js",
   "scripts": {
     "start": "node lib/start.js",
     "stop": "node lib/stop.js",
