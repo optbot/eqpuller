@@ -8,7 +8,7 @@ colorama==0.2.5
 configobj==4.7.2
 html5lib==0.999
 pbr==0.10.8
-pyOpenSSL==0.13
+pyOpenSSL==17.5.0
 pymongo==2.8
 pyserial==2.6
 python-apt==0.9.3.5ubuntu1
