@@ -6,7 +6,7 @@ argparse==1.2.1
 chardet==2.0.1
 colorama==0.2.5
 configobj==4.7.2
-html5lib==0.999
+html5lib==0.99999999
 pbr==0.10.8
 pyOpenSSL==0.13
 pymongo==2.8
